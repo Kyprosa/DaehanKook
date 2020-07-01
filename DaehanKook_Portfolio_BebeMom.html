@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>DaehanKook_Portfolio_BebeMom</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Adelle", cursive;
+			box-sizing: border-box;
+		}
+		.navbar{
+			height: 120px;
+			background-color: #EBEBEB;
+		}
+		.navbar .myname{
+			display: inline-block;
+			margin-left: 278px;
+			line-height: 120px;
+			vertical-align: middle;
+			font-weight: 700;
+		}
+		.navbar .myname a{
+			text-decoration: none;
+			color: #989898;
+			font-size: 19px;
+		}
+		.navbar .menu{
+			display: inline-block;
+			margin-left: 191px;
+		}
+		.navbar .menu a{
+			text-decoration: none;
+			color: #989898;
+			font-weight: 400;
+			font-size: 16px;
+			margin-right: 28px;
+		}
+		.navbar .menu a:hover{
+			color: #E6A900;
+		}
+
+		.title{
+			height: 330px;
+			background-color: #FFFFFF;
+			padding-left: 554px;
+		}
+		.title h3{
+			font-size: 24px;
+			color: #989898;
+			font-weight: 400;
+			padding-top: 80px;
+			padding-bottom: 20px;
+		}
+		.title h2{
+			font-size: 48px;
+			font-weight: 700;
+			color: #1F1F1F;
+			margin-bottom: 80px;
+		}
+		.description{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.description h2{
+			font-size: 32px;
+			font-weight: 700;
+			margin-top: 80px;
+			margin-bottom: 40px;
+			text-align: center;
+		}
+		.description h3{
+			font-size: 16px;
+			font-weight: 100;
+			text-align: center;
+			width: 812px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+		}
+		.description h3:nth-child(3){
+			margin-bottom: 80px;
+		}
+		.description-photo img{
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			box-shadow: 5px 5px 5px #EBEBEB;
+			margin-bottom: 40px;
+		}
+		.calling{
+			margin-top: 80px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: left;
+			width: 812px;
+			/*box-shadow: 5px 5px 5px #EBEBEB;*/
+			/*background-color: #F5F5F5;*/
+			margin-bottom: 80px;
+		}
+		.calling h3{
+			font-family: Montserrat, sans-serif;
+			font-size: 16px;
+			font-weight: 700;
+			margin-bottom: 10px;
+		}
+		.calling h4{
+			margin-bottom: 20px;
+			font-size: 16px;
+			font-weight: 100;
+			color: #252525;
+		}
+		.calling p{
+			font-family: Montserrat, sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 4px;
+		}
+		.calling .sns img{
+			margin-top: 20px;
+		}
+		.calling .sns img:not(:last-child){
+			padding-right: 24px;
+		}
+		.right-image img{
+			list-style: none;
+			display: inline-block;
+			float: right;
+			margin-top: 6px;
+		}
+		.related{
+			height: 744px;
+			background-color: #1F1F1F;
+			padding-left: 278px;
+		}
+		.related h2{
+			padding-top: 80px;
+			font-size: 19px;
+			font-weight: 100;
+			color: white;
+			margin-bottom: 20px;
+		}
+		.other-post{
+			display: inline-block;			
+		}
+		.other-post a{
+			text-decoration: none;
+		}
+		.related img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.related img:not(:last-child){
+			margin-right: 34px;
+		}
+		.related h3{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			margin-top: 20px;
+			margin-bottom: 12px;
+			color: white;
+			font-weight: 700;
+			font-size: 18px;
+		}
+		.related h4{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			width: 432px;
+			color: #B3B3B3;
+			font-size: 16px;
+			font-weight: 400;
+			margin-bottom: 6px;
+		}
+		.related h5{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			font-size: 14px;
+			font-weight: 100;
+			color: #545454;
+			margin-bottom: 80px;
+		}
+		.related h6{
+			font-size: 19px;
+			color: white;
+			font-weight: 100;
+			text-decoration: underline;
+		}
+
+		.footer{
+			height: 258px;
+			background-color: #191919;
+		}
+		.footer .home{
+			margin-left: 278px;
+			padding-top: 80px;
+		}
+		.footer .home a{
+			text-decoration: none;
+			color: white;
+			font-weight: 700;
+			font-size: 19px;
+		}
+		.footer .menu-bottom{
+			margin-top: 58px;
+			margin-left: 278px;
+		}
+		.footer .menu-bottom a{
+			text-decoration: none;
+			color: white;
+			font-size: 13px;
+			font-weight: 100;
+		}
+		.footer .menu-bottom a:not(:last-child){
+			margin-right: 24px;
+		}
+		.footer .sns-icon{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .sns-icon a:not(:last-child){
+			padding-right: 24px;
+		}
+		.footer .copyright{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .copyright h4{
+			color: white;
+			font-size: 14px;
+			font-weight: 100;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar"> 
+		<div class="navbar-contents">
+			<div class="myname"><a href="DaehanKook_Portfolio_Home.html">DAEHAN</a></div>
+			<div class="menu">
+				<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+				<a href="#">Journal</a>
+				<a href="DaehanKook_Portfolio_About.html">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+	<div class="title">
+		<h3>Design, UI/UX</h3>
+		<h2>BebeMom,<br>For Beginner Pregnant Women</h2>
+	</div>
+	<div class="title-image">
+		<img src="./img/header image 01.png">
+	</div>
+
+	<div class="description">
+		<h2>Multiple Care Apps for Beginner Pregnant Women</h2>
+		<h3>For newlyweds who lack overall knowledge as pregnant women, it teaches them the overall knowledge they may be curious about and the things they should take care of while attending obstetrics and gynecology.</h3>
+
+		<h3>Other applications provide advice on what pregnant women should do, recommend foods, avoids, and more, as well as video creators focusing on providing information about pregnant women, or government-provided benefits for pregnant women.</h3>
+	</div>
+	<div class="description-photo">
+		<img src="./img/bebemom (1).png">
+		<img src="./img/bebemom (2).png">
+		<img src="./img/bebemom (3).png">
+		<img src="./img/bebemom (4).png">
+		<img src="./img/bebemom (5).png">
+	</div>
+	<div class="calling">
+		<div class="right-image">
+			<img src="./img/calling.png">
+		</div>
+		<h3>국대한</h3>
+		<h4>UX Designer</h4>
+		<p>가치 중심적인 디자인을 추구하며,</p>
+		<p>지속 성장을 위해 끊임없이 노력합니다.</p>
+		<div class="sns">
+			<img src="./img/facebook_black.png">
+			<img src="./img/twitter_black.png">
+			<img src="./img/youtube_black.png">
+		</div>
+	</div>
+	<div class="related">
+		<h2>Related<br>Post</h2>
+		<div class="other-post">
+			<a href="DaehanKook_Portfolio_Moon.html">
+				<img src="./img/related (2).png">
+				<h3>Moon Reader+ 머터리얼 디자인 도입</h3>
+				<h4>전자책 리더기로 출시되어 현재 플레이스토어에서 가장 많은 조회, 다운수를 기록하고 있는 기존 어플리케이션의 디자인 문제점을 찾고...</h4>
+				<h5>Design, UI/UX</h5>
+			</a>
+		</div>
+		<div class="other-post">
+			<img src="./img/related (1).png">
+			<h3>COMMUNITY, 양방향 소통 신호등 디자인</h3>
+			<h4>RTOR(적신호 우회전 가능 교차로)을 허용하고 있는 대한민국은 교통의 원할함이 장점인 대신 우회전 관련 교통사고율이 높은 편인데, ...</h4>
+			<h5>Design, Public Facilities</h5>
+		</div>
+		<div class="other-post">
+			<a href="DaehanKook_Portfolio_BIOS.html">
+				<img src="./img/related (3).png">
+				<h3>BIOS, 무대 조명 시뮬레이터</h3>
+				<h4>무대에서 이뤄지는 퍼포먼스를 한층 돋보일 수 있게 도와주는 장치인 조명은 방송 관련 기획 외 여러 분야에 있어 필수적인 요소이다. 이...</h4>
+				<h5>UX, Software</h5>
+			</a>
+		</div>
+		<a href="DaehanKook_Portfolio_Home.html"><h6>Back to List</h6></a>
+	</div>
+
+	<div class="footer">
+		<div class="home">
+			<a href="DaehanKook_Portfolio_Home.html">DAEHAN</a>
+			<div class="sns-icon">
+			<a href="#"><img src="./img/facebook.png"></a>
+			<a href="#"><img src="./img/twitter.png"></a>
+			<a href="#"><img src="./img/youtube.png"></a>
+		</div>
+		</div>
+		<div class="menu-bottom">
+			<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+			<a href="#">Journal</a>
+			<a href="DaehanKook_Portfolio_About.html">About</a>
+			<a href="#">Contact</a>
+			<div class="copyright">
+				<h4>ⓒ 2020 Daehan. All right reserved</h4>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

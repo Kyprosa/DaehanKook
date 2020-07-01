@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>DaehanKook_Portfolio_About</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Adelle", cursive;
+			box-sizing: border-box;
+		}
+		.navbar{
+			height: 120px;
+			background-color: #191919;
+		}
+		.navbar .myname{
+			display: inline-block;
+			margin-left: 278px;
+			line-height: 120px;
+			vertical-align: middle;
+			font-weight: 700;
+		}
+		.navbar .myname a{
+			text-decoration: none;
+			color: #FFFFFF;
+			font-size: 19px;
+		}
+		.navbar .menu{
+			display: inline;
+			margin-left: 191px;
+		}
+		.navbar .menu a{
+			text-decoration: none;
+			color: #FFFFFF;
+			font-weight: 400;
+			font-size: 16px;
+			margin-right: 28px;
+		}
+		.navbar .menu a:hover{
+			color: #E6A900;
+		}
+		.main-title{
+			height: 460px;
+			background-color: #1F1F1F;
+		}
+		.main-title h2{
+			font-size: 64px;
+			font-weight: 100;
+			color: #FFFFFF;
+			margin-left: 554px;
+			padding-top: 80px;
+			padding-bottom: 10px;
+		}
+		.main-title h3{
+			font-family: "나눔스퀘어", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			color: #989898;
+			margin-left: 554px;
+			padding-bottom: 4px;
+		}
+		.main-myself h4{
+			font-family: "Montserrat", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			margin-top: 80px;
+			margin-left: 554px;
+			color: white;
+		}
+		.main-myself h5{
+			font-family: "Montserrat", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			margin-top: 12px;
+			margin-left: 554px;
+			color: white; 
+		}
+		.main-myself .sns{
+			margin-left: 554px;
+			margin-top: 20px;
+		}
+		.sns a:not(:last-child){
+			margin-right: 24px;
+		}
+		.profile-images{
+			background-position: center;
+			background-size: cover;
+			background-color: #0032E6;			
+		}
+		/*.profile-images img{
+			display: inline-block;
+			margin-left: auto;
+			margin-right: auto;
+		}*/
+
+		.blueright{
+			/*height: 670px;*/
+			background-color: #0032E6;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.blueright h1{
+			font-size: 24px;
+			font-weight: 100;
+			margin-left: 554px;
+			padding-top: 50px;
+			padding-bottom: 20px;
+			color: white;
+		}
+		.blueright .title{
+			margin-left: 554px;
+			width: 920px;
+		}
+		.blueright .title h2{
+			font-size: 32px;
+			font-weight: 700;
+			padding-top: 20px;
+			color: white;
+		}
+		.blueright .title h3{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			font-size: 16px;
+			font-weight: 100;
+			color: white;
+			margin-top: 10px;
+			padding-bottom: 40px;
+			text-align: left;
+			width: 690px;
+		}
+		.blueright .title img{
+			opacity: 0.4;
+			vertical-align: middle;
+			line-height: 100px;
+			margin-top: 40px;
+			margin-right: 40px;
+		}
+		.title-img{
+			display: inline-block;
+			float: right;
+		}
+		.title:not(:last-child){
+			border-bottom: 1px solid #1A47E9;
+		}
+
+		.insight{
+			height: 1538px;
+			background-color: #1F1F1F;
+		}
+		.recent{
+			width: 1226px;
+			border-bottom: 1px solid #707070;
+			margin-left: 554px;
+		}
+		.recent h2{
+			padding-top: 80px;
+			font-size: 23px;
+			font-weight: 400;
+			margin-bottom: 20px;
+			color: white;
+		}
+		.recent img{
+			margin-bottom: 20px;
+		}
+		.recent h3{
+			color: white;
+			font-size: 20px;
+			margin-bottom: 4px;
+		}
+		.recent h4{
+			font-family: "Montserrat", sans-serif;
+			color: white;
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+		.recent h5{
+			font-size: 16px;
+			color: #CCCCCC;
+			padding-bottom: 80px;
+			font-weight: 100;
+		}
+		
+		.Journal{
+			margin-left: 554px;
+			margin-top: 80px;
+		}
+		.Journal h2{
+			font-size: 20px;
+			color: white;
+			font-weight: 400;
+			margin-bottom: 20px;
+		}
+		.card-list{
+			display: inline-block;
+		}
+		.card-list img{
+			margin-bottom: 20px;
+		}
+		.card-list img:not(:last-child){
+			padding-right: 70px;
+		}
+		.card-list h3{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			font-size: 20px;
+			font-weight: 700;
+			color: white;
+			padding-bottom: 10px;
+		}
+		.card-list h4{
+			font-family: "넥슨Lv2고딕", sans-serif;
+			font-size: 18px;
+			font-weight: 100;
+			color: white;
+			padding-bottom: 20px;
+			width: 360px;
+		}
+		.card-list h5{
+			font-size: 13px;
+			color: #B3B3B3;
+			font-weight: 100;
+		}
+		.card-list a{
+			text-decoration: none;
+		}
+
+		.next{
+			height: 264px;
+			background-color: #0032E6;
+		}
+		.next a{
+			text-decoration: none;
+			color: white;			
+		}
+		.next a h4{
+			padding-top: 80px;
+			padding-bottom: 20px;
+			margin-left: 416px;
+			font-size: 19px;
+			font-weight: 400;
+		}
+		.next a h2{
+			font-size: 48px;
+			font-weight: 700;
+			margin-left: 416px;
+			margin-right: 0px;
+			width: 400px;
+			border-bottom: 10px solid #4C6FEE;
+		}
+
+		.footer{
+			height: 258px;
+			background-color: #191919;
+		}
+		.footer .home{
+			margin-left: 278px;
+			padding-top: 80px;
+		}
+		.footer .home a{
+			text-decoration: none;
+			color: white;
+			font-weight: 700;
+			font-size: 19px;
+		}
+		.footer .menu-bottom{
+			margin-top: 58px;
+			margin-left: 278px;
+		}
+		.footer .menu-bottom a{
+			text-decoration: none;
+			color: white;
+			font-size: 13px;
+			font-weight: 100;
+		}
+		.footer .menu-bottom a:not(:last-child){
+			margin-right: 24px;
+		}
+		.footer .sns-icon{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .sns-icon a:not(:last-child){
+			padding-right: 24px;
+		}
+		.footer .copyright{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .copyright h4{
+			color: white;
+			font-size: 14px;
+			font-weight: 100;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar"> 
+		<div class="navbar-contents">
+			<div class="myname"><a href="DaehanKook_Portfolio_Home.html">DAEHAN</a></div>
+			<div class="menu">
+				<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+				<a href="#">Journal</a>
+				<a href="DaehanKook_Portfolio_About.html">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+	<div class="main-title">
+		<h2>About</h2>
+		<h3>가치 중심적인 디자인을 추구하며</h3>
+		<h3>지속 성장을 위해 끊임없이 노력합니다.</h3>
+		<div class="main-myself">
+			<h4>국대한</h4>
+			<h5>UX Designer</h5>
+			<div class="sns">
+				<a href="#"><img src="./img/facebook.png"></a>
+				<a href="#"><img src="./img/twitter.png"></a>
+				<a href="#"><img src="./img/youtube.png"></a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="profile-images">
+		<img src="./img/absolute1.png">
+	</div>
+
+	<div class="blueright">
+		<h1>Work Process</h1>
+		<div class="title">
+			<div class="title-img"><img src="./img/icon (1).png" width="80" height="80"></div>	
+			<h2>Design Thinking</h2>			
+			<h3>모든 일의 시작은 의문에서 비롯됩니다. "왜" 라는 질문을 계속 던져 프로젝트의 목적을 분명히하고, 그에 맞는 해결책을 디자이너의 시작으로 구체화합니다.	</h3>					
+		</div>
+		<div class="title">
+			<div class="title-img"><img src="./img/icon (2).png" width="80" height="80"></div>
+			<h2>Creativity</h2>			
+			<h3>고객, 기업, 서비스에 맞는 해결책을 시각적으로 제시합니다. GUI, 인터페이스 외형 뿐만이 아닌 상호작용 모션 기술을 이용해서 심미성과 사용성에 가치를 둔 디자인을 합니다.</h3>			
+		</div>
+		<div class="title">
+			<div class="title-img"><img src="./img/icon (3).png" width="80" height="80"></div>
+			<h2>Communication</h2>			
+			<h3>다양한 웹, 앱 서비스 구축 및 운영 경험으로 효율적인 리소스 관리와 스타일 가이드를 결과물에 반영합니다. 개발에 대한 높은 이해도를 바탕으로 타 직군과의 협업에 있어 원활한 소통을 합니다.</h3>			
+		</div>
+	</div>
+
+	<div class="insight">
+		<div class="recent">
+			<h2>Recent Project</h2>
+			<img src="./img/itoon.png">
+			<h3>Interaction Toon</h3>
+			<h4>인터렉션 툰</h4>
+			<h5>Web App 2020. 03 ~ 2020. 09</h5>
+		</div>
+		<div class="Journal">
+			<h2>Journal</h2>
+			<div class="card-list">
+				<a href="DaehanKook_Portfolio_Moon.html">
+					<img src="./img/journal01.png">
+					<h3>Moon Reader+ 리디자인</h3>
+					<h4>전자책 리더기로 출시되어 현재 플레이스토어에서 가장 많은 조회, 다운수를 기록하고 있는 기존 어플리케이션의 디자인 문제점을 찾고, 최신 디자인 트</h4>
+					<h5>UX/UI 2020. 05</h5>
+				</a>
+			</div>
+			<div class="card-list">
+				<img src="./img/journal02.png">
+				<h3>COMMUNITY, 양방향 소통 신호등</h3>
+				<h4>RTOR(적신호 우회전 가능 교차로)을 허용하고 있는 대한민국은 교통의 원할함이 장점인 대신 우회전 관련 교통사고율이 높은 편인데, 이를 근본적으로</h4>
+				<h5>Public Facilities 2019. 12</h5>
+			</div>
+			<div class="card-list">
+				<a href="DaehanKook_Portfolio_BIOS.html">
+					<img src="./img/journal03.png">
+					<h3>BIOS, 무대 조명 시뮬레이터</h3>
+					<h4>무대에서 이뤄지는 퍼포먼스를 한층 돋보일 수 있게 도와주는 장치인 조명은 방송 관련 기획 외 여러 분야에 있어 필수적인 요소이다.</h4>
+					<h5>UX, Software 2019. 05</h5>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="next">
+		<a href="DaehanKook_Portfolio_Home.html"><h4>Next Projects</h4><h2>My Work History</h2></a>
+	</div>
+
+	<div class="footer">
+		<div class="home">
+			<a href="DaehanKook_Portfolio_Home.html">DAEHAN</a>
+			<div class="sns-icon">
+			<a href="#"><img src="./img/facebook.png"></a>
+			<a href="#"><img src="./img/twitter.png"></a>
+			<a href="#"><img src="./img/youtube.png"></a>
+		</div>
+		</div>
+		<div class="menu-bottom">
+			<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+			<a href="#">Journal</a>
+			<a href="DaehanKook_Portfolio_About.html">About</a>
+			<a href="#">Contact</a>
+			<div class="copyright">
+				<h4>ⓒ 2020 Daehan. All right reserved</h4>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>

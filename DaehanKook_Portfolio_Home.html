@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<title>DaehanKook_Portfolio_Home</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			font-family: "Adelle", cursive;
+			box-sizing: border-box;
+		}
+		.navbar{
+			height: 120px;
+			background-color: #191919;
+		}
+		.navbar .myname{
+			display: inline-block;
+			margin-left: 278px;
+			line-height: 120px;
+			vertical-align: middle;
+			font-weight: 700;
+		}
+		.navbar .myname a{
+			text-decoration: none;
+			color: #FFFFFF;
+			font-size: 19px;
+		}
+		.navbar .menu{
+			display: inline;
+			margin-left: 191px;
+		}
+		.navbar .menu a{
+			text-decoration: none;
+			color: #FFFFFF;
+			font-weight: 400;
+			font-size: 16px;
+			margin-right: 28px;
+		}
+		.navbar .menu a:hover{
+			/*background-color: #0032E6;*/
+			color: #E6A900;
+			/*font-weight: 700;*/
+		}
+
+		.main-title{
+			height: 290px;
+			background-color: #1F1F1F;
+		}
+		.main-title h2{
+			font-size: 64px;
+			font-weight: 100;
+			color: #FFFFFF;
+			margin-left: 554px;
+			padding-top: 80px;
+			padding-bottom: 10px;
+		}
+		.main-title h3{
+			font-family: "나눔스퀘어", sans-serif;
+			font-size: 16px;
+			font-weight: 400;
+			color: #989898;
+			margin-left: 554px;
+			padding-bottom: 4px;
+		}
+		.Carousel{
+			height: 720px;
+			/*background-color: orange;*/
+			background-image: url(./img/main.png);
+			background-size: cover;
+			background-position: center;
+		}
+		.Carousel-Title{
+			display: inline-block;
+			margin-left: 278px;
+			height: 720px;		
+			vertical-align: middle;
+			margin-top: 450px;
+		}
+		.Carousel-Title h2{
+			text-decoration: none;
+			color: white;
+			font-size: 64px;
+			font-weight: 700;
+			vertical-align: middle;
+		}
+		.Carousel-Title h3{
+			font-family: "나눔스퀘어", sans-serif;
+			font-size: 28px;
+			color: white;
+		}
+		.Carousel-Title h4{
+			font-weight: 100;
+			font-size: 16px;
+			color: #C4C4C4;
+			padding-top: 10px;
+		}
+
+		.card-contents{
+			background-color: #1F1F1F;
+			height: 1180px;			
+		}
+		.card-contents .card-title{
+			padding-top: 80px;
+			padding-left: 312px;
+			font-size: 19px;
+			font-weight: 400;
+			color: white;
+			margin-bottom: 40px;
+		}
+		.card1{
+			display: inline-block;
+			margin-left: 312px;
+		}
+		.card1 img{
+			margin-bottom: 20px;
+		}
+		.card1 a{
+			text-decoration: none;
+			color: white;
+			font-size: 17px;
+		}
+		.card1 h3{
+			font-family: "나눔스퀘어", sans-serif;
+			font-size: 19px;
+			color: white;
+			/*margin-top: 10px;*/
+		}
+		.card1 h4{
+			font-size: 13px;
+			font-weight: 100;
+			color: #B3B3B3;
+			margin-top: 10px;
+			margin-bottom: 40px;
+		}
+		.card2{
+			display: inline-block;
+			margin-left: 16px;
+		}
+		.card2 img{
+			margin-bottom: 20px;
+		}
+		.card2 a{
+			text-decoration: none;
+			color: white;
+			font-size: 17px;
+		}
+		.card2 h3{
+			font-family: "나눔스퀘어", sans-serif;
+			font-size: 19px;
+			color: white;
+			/*margin-top: 10px;*/
+		}
+		.card2 h4{
+			font-size: 13px;
+			font-weight: 100;
+			color: #B3B3B3;
+			margin-top: 10px;
+			margin-bottom: 40px;
+		}
+
+		.next{
+			height: 264px;
+			background-color: #0032E6;
+		}
+		.next a{
+			text-decoration: none;
+			color: white;			
+		}
+		.next a h4{
+			padding-top: 80px;
+			padding-bottom: 20px;
+			margin-left: 416px;
+			font-size: 19px;
+			font-weight: 400;
+		}
+		.next a h2{
+			font-size: 48px;
+			font-weight: 700;
+			margin-left: 416px;
+			margin-right: 0px;
+			border-bottom: 10px solid #4C6FEE;
+			width: 390px;
+		}
+
+		.footer{
+			height: 258px;
+			background-color: #191919;
+		}
+		.footer .home{
+			margin-left: 278px;
+			padding-top: 80px;
+		}
+		.footer .home a{
+			text-decoration: none;
+			color: white;
+			font-weight: 700;
+			font-size: 19px;
+		}
+		.footer .menu-bottom{
+			margin-top: 58px;
+			margin-left: 278px;
+		}
+		.footer .menu-bottom a{
+			text-decoration: none;
+			color: white;
+			font-size: 13px;
+			font-weight: 100;
+		}
+		.footer .menu-bottom a:not(:last-child){
+			margin-right: 24px;
+		}
+		.footer .sns-icon{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .sns-icon a:not(:last-child){
+			padding-right: 24px;
+		}
+		.footer .copyright{
+			display: inline-block;
+			float: right;
+			margin-right: 278px;
+		}
+		.footer .copyright h4{
+			color: white;
+			font-size: 14px;
+			font-weight: 100;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<div class="navbar-contents">
+			<div class="myname"><a href="DaehanKook_Portfolio_Home.html">DAEHAN</a></div>
+			<div class="menu">
+				<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+				<a href="#">Journal</a>
+				<a href="DaehanKook_Portfolio_About.html">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-title">
+		<h2>Projects</h2>
+		<h3>UI, UX 디자인을 전공, 웹, 웹앱, 모바일 인터페이스 디자인에 관심이 많으며,</h3>
+		<h3>개발자로서의 눈을 갖고자 웹 개발을 배우고 있습니다.</h3>
+	</div>
+
+	<div class="Carousel">
+		<div class="Carousel-Title">
+			<h2>Moon Reader +</h2>
+			<h3>문 리더+ 머터리얼 디자인</h3>
+			<h4>Application 2020. 05</h4>
+		</div>
+	</div>
+
+	<div class="card-contents">
+		<div class="card-title">Recent Projects</div>
+		<div class="card1">		
+			<a href="DaehanKook_Portfolio_Moon.html">
+				<img class="img1" src="./img/moon.png">
+				<h3>Moon Reader +, Material Concept Re-Design</h3>
+				<h3>전자책 리더기, 문 리더+ 머터리얼 컨셉 리디자인</h3>
+				<h4>Web Design 2020. 05</h4>
+			</a>			
+			<a href="DaehanKook_Portfolio_BIOS.html">
+				<img class="img2" src="./img/bios.png">
+				<h3>BIOS, Stage Lightning Simulator</h3>
+				<h3>바이오스, 자바스크립트를 통한 무대 조명 장치 시스템 개발</h3>
+				<h4>Java Script 2019. 09</h4>
+			</a>			
+		</div>
+		<div class="card2">		
+			<a href="DaehanKook_Portfolio_BebeMom.html">
+				<img class="img3" src="./img/bebemom.png">
+				<h3>BebeMom</h3>
+				<h3>베베맘, 초보 임산부를 위한 관리 어플리케이션</h3>
+				<h4>UX/UI 2019. 06</h4>
+			</a>			
+			<a href="#">
+				<img class="img4" src="./img/howse.png">
+				<h3>A website for interior self</h3>
+				<h3>셀프 인테리어를 위한 웹사이트</h3>
+				<h4>Web Interface 2019. 03</h4>
+			</a>
+		</div>
+	</div>
+
+	<div class="next">
+		<a href="DaehanKook_Portfolio_About.html">
+			<h4>Next About</h4>
+			<h2>Pieces of my Life</h2>
+		</a>
+	</div>
+
+	<div class="footer">
+		<div class="home">
+			<a href="DaehanKook_Portfolio_Home.html">DAEHAN</a>
+			<div class="sns-icon">
+			<a href="#"><img src="./img/facebook.png"></a>
+			<a href="#"><img src="./img/twitter.png"></a>
+			<a href="#"><img src="./img/youtube.png"></a>
+		</div>
+		</div>
+		<div class="menu-bottom">
+			<a href="DaehanKook_Portfolio_Home.html">Projects</a>
+			<a href="#">Journal</a>
+			<a href="DaehanKook_Portfolio_About.html">About</a>
+			<a href="#">Contact</a>
+			<div class="copyright">
+				<h4>ⓒ 2020 Daehan. All right reserved</h4>
+			</div>
+		</div>		
+	</div>
+</body>
+</html>
